@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kyle Ghafari == Software Developer</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 </head>
+
 <body>
+    <div class="header">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="mainRunner" id="home">
+        <img id="splashImg" src="images/splash.jpg" alt="Photo by Markus Spiske on Unsplash" height="300">
+        <img id="headshot" src="images/headshot.jpg" alt="headshot" height="250">
+    </div>
+
+    <div class="maincontent">
+        <div class="introBlock">
+            <audio id="myAudio">
+                <source src="obi-wan-hello-there.mp3" type="audio/mpeg">
+            </audio>
+            <h1 class="title" onclick="playAudio()">Hello there!</h1>
+            <h2 class="title">I'm Kyle, a software engineer.</h2>
+            <p>Currently enrolled in Grand Circus' 2020 C#/.NET bootcamp, and am looking for exciting opportunities within the software engineering community. 
+                My education and interest is primarily focused on backend development, but I love everything tech, and have my sights on learning the skills needed to consider myself full-stack as soon as possible.
+                I'm putting in my 10,000 hours, one day at a time.
+            </p>
+        </div>
+
+        <hr class="lines">
+
+        <div class="contentBlock" id="skills">
+            <h1 class="title">Skills</h1>
+            <p> <img id="skillImg"src="images/programming.png" height="125">
+                Focused on C#/.NET Core and object oriented
+                fundementals. I put a large emphasis on not being bound to one language or technology
+                so I'm also familiar with SQL/RDBMS, JavaScript, HTML/CSS, version control (Git/GitHub), Test Driven
+                Design and Entity Framework Core.
+                I consider myself a lifelong learner, and look forward to this section frequently with the new
+                technologies that I encounter in the wild.
+
+            </p>
+
+            </table>
+        </div>
+
+        <hr class="lines">
+
+        <div class="contentBlock" id="projects">
+            <h1 class="title">Projects</h1>
+            <p> <img id="projectImg"src="images/rocketbold.png" height="125">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra aliquam mauris quis interdum.
+                Praesent nec faucibus turpis. Suspendisse vel faucibus orci, laoreet porttitor tortor. Phasellus et ante
+                et
+                sapien tristique vulputate. Pellentesque id massa eget dolor lacinia ultricies vel vel sapien. Ut vitae
+                tempor leo. Mauris dapibus vulputate nulla in tempus.
+            </p>
+        </div>
+
+        <hr class="lines">
+
+        <div class="contentBlock" id="contact">
+            <h1 class="title">Contact Info</h1>
+            <p> <img id="contactImg"src="images/laptop.png" height="125">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra aliquam mauris quis interdum.
+                Praesent nec faucibus turpis. Suspendisse vel faucibus orci, laoreet porttitor tortor. Phasellus et ante
+                et
+                sapien tristique vulputate. Pellentesque id massa eget dolor lacinia ultricies vel vel sapien. Ut vitae
+                tempor leo. Mauris dapibus vulputate nulla in tempus.
+            </p>
+        </div>
+    </div>
     
+
+    <div class="footer">
+        <p>Powered by reheated pizza and frequent naps.</p>
+        <a href="https://www.linkedin.com/in/kghafari/">
+            <img src="images/LI-In-Bug.png" height="64px"></a>
+
+        <a href="https://github.com/kghafari">
+            <img src="images/GitHub-Mark-64px.png"></a>
+    </div>
+
+
+
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+
+        function pauseAudio() {
+            x.pause();
+        } 
+    </script>
+
 </body>
+
 </html>
